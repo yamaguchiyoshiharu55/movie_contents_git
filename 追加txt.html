@@ -1,0 +1,21 @@
+<body>
+    <ul>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>PHP</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        const list = $('<li>', {
+            text: 'JavaScript',
+            class: 'myclass'
+        });
+        //<li class="myclass">JavaScript</li>
+
+        // 生成したHTML要素を画面に表示する
+
+        $('ul').append(list);
+
+    </script>
+</body>

@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+/* cssリセット です*/
+
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4c4c4c;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* header */
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.header_nav ul {
+    display: flex;
+}
+
+.header_nav ul li {
+    padding: 5px 30px;
+    font-size: 14px;
+    border-right: 1px solid #4c4c4c;
+}
+
+.header_nav ul li:last-child {
+    border-right: none;
+}
+
+.header_nav ul li a:hover {
+    display: block;
+    transform: scale(1.05);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* メインビジュアル */
+
+.main_visual {
+    background: url(images/main_bg.jpg) no-repeat center top;
+}
+
+.main_visual_content {
+    font-size: 88px;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 156px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* サービス */
+
+.service {
+    background: #fafafa;
+}
+
+.service h2 {
+    color: #0d8272;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.service_wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 70px 15px;
+    box-sizing: border-box;
+}
+
+.service_wrap > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_dertail {
+    width: 31.5%;
+    background: #fff;
+}
+
+.service_contents_wrap {
+    padding: 10px;
+}
+
+.service_dertail h3 {
+    color: #0d8272;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-left: 10px solid #0d8272;
+    line-height: 1.2;
+    padding-left: 5px;
+}
+
+.service_dertail p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/* contact */
+
+.contact {
+    padding: 70px 0;
+}
+
+.contact h2 {
+    color: #0d8272;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.contact a {
+    color: #fff;
+    background: #0d8272;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.contact a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* footer */
+
+footer {
+    background: #20261e;
+    padding: 45px 0;
+}
+
+footer .footer_wrap {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1060px;
+    padding: 0 10px;
+}
+
+.footer_nav {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.footer_nav li {
+    margin-right: 70px;
+}
+
+.footer_nav li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.copy {
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* スマホメニュー */
+.header_sp_nav {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* header  */
+    .header_nav {
+        display: none;
+    }
+
+    .header_wrap h1 img {
+        width: 255px;
+    }
+
+    /* メインビジュアル */
+
+    .main_visual {
+        background: url(images/sp_main_bg.jpg) no-repeat center top/cover;
+    }
+
+    .main_visual_content {
+        font-size: 40px;
+        padding: 120px 10px;
+    }
+
+    /* サービス */
+
+    .service {
+        background: #fafafa;
+    }
+
+    .service_wrap {
+        padding: 30px 10px;
+    }
+
+    .service h2 {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .service_wrap > div {
+        display: block;
+    }
+
+    .service_dertail {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .service_dertail:last-child {
+        margin-bottom: 0;
+    }
+
+    .service_dertail img {
+        width: 100%;
+    }
+
+    .service_contents_wrap {
+        padding: 10px;
+    }
+
+    .service_dertail h3 {
+        font-size: 20px;
+    }
+
+    .service_dertail p {
+        line-height: 1.5;
+        font-size: 17px;
+    }
+
+    /* contact */
+    .contact {
+        padding: 30px 0;
+    }
+
+    .contact h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
+
+    .contact a {
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    .contact a:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+
+    /* footer */
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footer_nav {
+        display: none;
+    }
+
+    .footer_wrap p img {
+        width: 255px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+
+
+    /*スマホボタン*/
+
+    .menu-btn {
+        height: 40px;
+        width: 40px;
+        border: 1px solid #4c4c4c;
+        border-radius: 5px;
+        display: block;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    .menu-btn span {
+        height: 2px;
+        width: 28px;
+        border-radius: 3px;
+        background-color: #4c4c4c;
+        display: inline-block;
+        position: relative;
+        left: 5px;
+        transition: 0.1s;
+    }
+
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 28px;
+        border-radius: 3px;
+        background-color: #4c4c4c;
+        position: absolute;
+        transition: 0.1s;
+    }
+
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+
+    .menu-btn span:after {
+        top: 8px;
+    }
+
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .header_sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .header_sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .header_sp_nav li {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 17px;
+        font-size: 20px;
+    }
+
+    #menu-btn-check:checked ~ .header_sp_nav {
+        display: block;
+
+    }
+
+}
