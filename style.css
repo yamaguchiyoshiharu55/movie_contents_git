@@ -212,6 +212,7 @@ footer .footer_wrap {
 
 @media screen and (max-width: 767px) {
 
+
     /* header  */
     .header_nav {
         display: none;
@@ -233,10 +234,6 @@ footer .footer_wrap {
     }
 
     /* サービス */
-
-    .service {
-        background: #fafafa;
-    }
 
     .service_wrap {
         padding: 30px 10px;
@@ -296,11 +293,6 @@ footer .footer_wrap {
         display: inline-block;
     }
 
-    .contact a:hover {
-        opacity: 0.7;
-        transition: 0.3s;
-    }
-
     /* footer */
     footer {
         padding: 30px 10px;
@@ -332,7 +324,7 @@ footer .footer_wrap {
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         z-index: 100;
     }
 
@@ -341,9 +333,8 @@ footer .footer_wrap {
         width: 28px;
         border-radius: 3px;
         background-color: #4c4c4c;
-        display: inline-block;
+        display: block;
         position: relative;
-        left: 5px;
         transition: 0.1s;
     }
 
@@ -398,10 +389,10 @@ footer .footer_wrap {
 
     }
 
-    .header_sp_nav li {
+    .header_sp_nav li a {
+        display: block;
         text-align: center;
         padding: 20px 0;
-        font-size: 17px;
         font-size: 20px;
     }
 
